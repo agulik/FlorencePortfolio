@@ -46,7 +46,7 @@ p {
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #1abc9c;
+  color: #fff;
   text-decoration: none;
   font-size: 20px;
   overflow: hidden;
@@ -69,6 +69,7 @@ p {
 
 .button_container {
   position: fixed;
+  margin-right: 20px;
   top: 5%;
   right: 2%;
   height: 27px;
@@ -86,16 +87,16 @@ p {
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .bottom {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container span {
   background: #fff;
   border: none;
-  height: 5px;
+  height: 3.5px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -168,27 +169,28 @@ p {
 .overlay ul li a {
   display: block;
   position: relative;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-  width: 100%;
-}
-.overlay ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #FFF;
-  transition: .35s;
+
+.overlay ul li a:hover {
+  color: #FF8B8B;
+  text-decoration: none;
 }
 
-.modal-links {
+.overlay ul a i:hover {
+  color: #FF8B8B;
+  text-decoration: none;
+}
+
+.overlay a {
   color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
